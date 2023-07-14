@@ -1,6 +1,5 @@
 import 'package:auth_screens/constants/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'custombtn.dart';
 
