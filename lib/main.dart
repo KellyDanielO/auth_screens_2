@@ -1,0 +1,30 @@
+import 'package:auth_screens/constants/colors.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'screens/home.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Auth Screens',
+      defaultTransition: Transition.cupertino,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+        scaffoldBackgroundColor: AppColors.backgroundColor,
+        appBarTheme: const AppBarTheme(color: AppColors.backgroundColor)
+      ),
+      home: const HomeScreen(),
+    );
+  }
+}
